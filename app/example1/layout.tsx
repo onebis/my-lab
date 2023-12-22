@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
-import { Poppins } from 'next/font/google'
+import { Playfair } from 'next/font/google'
 
-const poppins = Poppins({ subsets: ['latin'], weight: '400' })
+const playfair = Playfair({ subsets: ['latin'], weight: '400' })
 
 export const metadata: Metadata = {
   title: 'example1',
@@ -9,5 +9,5 @@ export const metadata: Metadata = {
 }
 
 export default function Example1Layout({ children }: { children: React.ReactNode }) {
-  return <body className={poppins.className}>{children}</body>
+  return <body className={playfair.className}>{children}</body>
 }

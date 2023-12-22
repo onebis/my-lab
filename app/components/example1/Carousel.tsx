@@ -5,10 +5,10 @@ import { A11y, Autoplay, Navigation, Pagination, Keyboard } from 'swiper/modules
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 import slide1 from '@/public/images/image1.jpg'
-import slide3 from '@/public/images/image1.jpg'
 import slide4 from '@/public/images/image1.jpg'
-import slide5 from '@/public/images/image1.jpg'
 import slide2 from '@/public/images/image2.jpg'
+import slide5 from '@/public/images/image2.jpg'
+import slide3 from '@/public/images/image3.jpg'
 
 export default function Carousel() {
   const items = [slide1, slide2, slide3, slide4, slide5]
@@ -47,9 +47,9 @@ export default function Carousel() {
                 className='object-cover'
                 fill
                 src={image}
-                sizes='265px'
                 key={`slide-${i + 1}`}
                 alt=''
+                loading='lazy'
               />
             </SwiperSlide>
           ))}
