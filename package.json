@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/react": "^2.2.9",
     "eslint-plugin-import": "^2.29.1",
+    "framer-motion": "^10.16.16",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"
