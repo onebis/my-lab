@@ -1,26 +1,13 @@
 import { Button } from '@nextui-org/button'
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-  NavbarMenuToggle,
-  NavbarMenu,
-  NavbarMenuItem,
-} from '@nextui-org/navbar'
-import { Neuton } from 'next/font/google'
-import Image from 'next/image'
-import Link from 'next/link'
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from '@nextui-org/navbar'
 import { Account } from '@/public/icon/account/Account'
 import { MagnifyingGlass } from '@/public/icon/magnifying-glass/magnifying-glass'
 import { ShoppingCart } from '@/public/icon/shopping_cart/shopping_cart'
 
-const neuton = Neuton({ subsets: ['latin'], weight: '400' })
-
 export function Header() {
   return (
     <header className='flex h-1/6 w-full max-w-7xl justify-around px-5'>
-      <Navbar>
+      <Navbar position={'static'}>
         <NavbarBrand>
           <div className='mr-10'>Logo</div>
         </NavbarBrand>
