@@ -19,7 +19,7 @@ export default function Carousel() {
         <Swiper
           onInit={() => setReady(true)}
           modules={[Autoplay, Pagination, Navigation, A11y, Keyboard]}
-          spaceBetween={20}
+          spaceBetween={0}
           keyboard={{
             enabled: true,
           }}
@@ -41,7 +41,7 @@ export default function Carousel() {
           {items.map((image, i) => (
             <SwiperSlide
               key={`slide-${i}`}
-              className='relative aspect-video overflow-hidden rounded-lg border shadow'
+              className='relative aspect-video overflow-hidden border shadow'
             >
               <Image
                 className='object-cover'

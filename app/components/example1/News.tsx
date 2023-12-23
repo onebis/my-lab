@@ -21,22 +21,22 @@ const contents = [
   {
     id: 2,
     isNew: false,
-    date: '2023.12.21',
-    text: 'サイトをリニューアルしました',
+    date: '2023.12.01',
+    text: '今月の一押し',
     image: image4,
   },
   {
     id: 3,
     isNew: false,
-    date: '2023.12.21',
-    text: 'サイトをリニューアルしました',
+    date: '2023.11.15',
+    text: 'お客様の声',
     image: image5,
   },
   {
     id: 4,
     isNew: false,
-    date: '2023.12.21',
-    text: 'サイトをリニューアルしました',
+    date: '2023.10.27',
+    text: 'コラム：日々のお手洗い',
     image: image6,
   },
 ]
@@ -66,7 +66,7 @@ export default function News() {
         ref={ref}
       >
         <div className='mx-auto max-w-5xl'>
-          <p className='font-playfair pb-10 text-center text-4xl'>News</p>
+          <p className='pb-10 text-center font-playfair text-4xl'>News</p>
           <div className='flex justify-between'>
             {contents.map((content) => {
               return (
@@ -83,7 +83,7 @@ export default function News() {
                     {content.isNew ? (
                       <div className='inline bg-red-400 px-2 py-1 text-white'>New</div>
                     ) : null}
-                    <p className='font-playfair ml-1 p-1'>{content.date}</p>
+                    <p className='ml-1 p-1 font-playfair'>{content.date}</p>
                   </CardBody>
                   <CardFooter className={Zen_Kaku_Gothic.className + ` pt-0`}>
                     <p className='font-gothic text-sm font-semibold'>{content.text}</p>

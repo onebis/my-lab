@@ -1,6 +1,7 @@
 'use client'
 import { NextUIProvider } from '@nextui-org/react'
 import Carousel from '@/app/components/example1/Carousel'
+import Footer from '@/app/components/example1/Footer'
 import { Header } from '@/app/components/example1/Header'
 import MainContent from '@/app/components/example1/MainContent'
 import News from '@/app/components/example1/News'
@@ -15,6 +16,7 @@ export default function Index() {
         <MainContent />
         <News />
         <Products />
+        <Footer />
       </main>
     </NextUIProvider>
   )
