@@ -56,9 +56,8 @@ export default function News() {
   const isVisible = useInView(ref)
 
   return (
-    <div className='flex h-1/2 w-full flex-col bg-gray-300/30 p-3'>
+    <div className='mt-10 flex h-1/2 w-full flex-col bg-gray-300/30 py-20'>
       <motion.div
-        id='my-element'
         // animate={isVisible ? 'visible' : 'hidden'}
         // variants={variants}
         initial={{ y: 60, opacity: 0 }}
@@ -67,7 +66,7 @@ export default function News() {
         ref={ref}
       >
         <div className='mx-auto max-w-5xl'>
-          <p className='font-playfair py-10 text-center text-4xl'>News</p>
+          <p className='font-playfair pb-10 text-center text-4xl'>News</p>
           <div className='flex justify-between'>
             {contents.map((content) => {
               return (
@@ -77,7 +76,7 @@ export default function News() {
                       alt='Card background'
                       className='object-cover'
                       src={content.image}
-                      width={250}
+                      width={300}
                     />
                   </CardHeader>
                   <CardBody className='mb-0 flex flex-row overflow-visible py-2'>

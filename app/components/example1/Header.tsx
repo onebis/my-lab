@@ -38,8 +38,8 @@ const header_lists = [
 
 export function Header() {
   return (
-    <Navbar position={'sticky'} className='flex w-full justify-center'>
-      <NavbarContent>
+    <Navbar maxWidth={'lg'} position={'sticky'} className='flex w-full justify-center px-0'>
+      <NavbarContent justify={'start'}>
         <div className='w-auto text-center'>Logo</div>
       </NavbarContent>
       <NavbarContent className='font-playfair space-x-5 uppercase'>
