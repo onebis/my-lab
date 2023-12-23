@@ -4,6 +4,7 @@ import Carousel from '@/app/components/example1/Carousel'
 import { Header } from '@/app/components/example1/Header'
 import MainContent from '@/app/components/example1/MainContent'
 import News from '@/app/components/example1/News'
+import Products from '@/app/components/example1/Products'
 
 export default function Index() {
   return (
@@ -13,6 +14,7 @@ export default function Index() {
         <Carousel />
         <MainContent />
         <News />
+        <Products />
       </main>
     </NextUIProvider>
   )

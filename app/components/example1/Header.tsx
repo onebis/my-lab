@@ -42,7 +42,7 @@ export function Header() {
       <NavbarContent>
         <div className='w-auto text-center'>Logo</div>
       </NavbarContent>
-      <NavbarContent className='space-x-5 uppercase'>
+      <NavbarContent className='font-playfair space-x-5 uppercase'>
         {header_lists.map((item) => {
           return (
             <NavbarItem key={item.title} className='sm:text-sm lg:text-base'>

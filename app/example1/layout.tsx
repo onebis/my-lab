@@ -1,7 +1,5 @@
 import type { Metadata } from 'next'
-import { Playfair } from 'next/font/google'
-
-const playfair = Playfair({ subsets: ['latin'], weight: '400' })
+import { Playfair, ZenKakuGothicNew } from '@/app/components/example1/font'
 
 export const metadata: Metadata = {
   title: 'example1',
@@ -9,5 +7,5 @@ export const metadata: Metadata = {
 }
 
 export default function Example1Layout({ children }: { children: React.ReactNode }) {
-  return <body className={playfair.className}>{children}</body>
+  return <body className={`${Playfair.variable} ${ZenKakuGothicNew.variable}`}>{children}</body>
 }
