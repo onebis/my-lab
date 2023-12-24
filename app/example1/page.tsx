@@ -6,6 +6,7 @@ import { Header } from '@/app/components/example1/Header'
 import MainContent from '@/app/components/example1/MainContent'
 import News from '@/app/components/example1/News'
 import Products from '@/app/components/example1/Products'
+import SNS from '@/app/components/example1/SNS'
 
 export default function Index() {
   return (
@@ -17,6 +18,7 @@ export default function Index() {
         <News />
         <Products />
         <Footer />
+        <SNS />
       </main>
     </NextUIProvider>
   )
