@@ -3,8 +3,14 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import { A11y, Autoplay, Navigation, Pagination, Keyboard } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import image10 from '@/public/images/image10.jpg'
+import image11 from '@/public/images/image11.jpg'
+import image2 from '@/public/images/image2.jpg'
+import image4 from '@/public/images/image4.jpg'
 import image5 from '@/public/images/image5.jpg'
 import image6 from '@/public/images/image6.jpg'
+import image8 from '@/public/images/image8.jpg'
+import image9 from '@/public/images/image9.jpg'
 
 const new_items = [
   {
@@ -18,22 +24,22 @@ const new_items = [
     place: '5,250円',
   },
   {
-    image: image6,
+    image: image11,
     name: '乾燥肌用石鹸（６個セット）赤',
     place: '5,250円',
   },
   {
-    image: image6,
+    image: image10,
     name: '子供用石鹸（２個セット）赤',
     place: '1,250円',
   },
   {
-    image: image6,
+    image: image2,
     name: '子供用石鹸（２個セット）赤',
     place: '1,250円',
   },
   {
-    image: image6,
+    image: image4,
     name: '子供用石鹸（２個セット）赤',
     place: '1,250円',
   },
@@ -50,10 +56,10 @@ export default function Products() {
       <p className='mb-2 mt-5 px-2 font-playfair text-2xl uppercase'>special</p>
       <div className='flex justify-center px-2'>
         <div className='w-full flex-grow'>
-          <Image alt='Card background' className='object-cover' src={image5} />
+          <Image alt='Card background' className='object-cover' src={image9} />
         </div>
         <div className='w-full flex-grow'>
-          <Image alt='Card background' className='object-cover' src={image6} />
+          <Image alt='Card background' className='object-cover' src={image8} />
         </div>
       </div>
       <p className='mb-2 mt-20 px-2 font-playfair text-2xl uppercase'>new items</p>
