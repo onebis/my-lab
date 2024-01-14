@@ -91,14 +91,15 @@ export default function Products() {
               <div className='flex flex-col'>
                 <Image
                   className='object-cover'
-                  // fill
                   src={item.image}
                   key={`slide-${i + 1}`}
                   alt=''
                   loading='lazy'
                 />
                 <div className='py-1 font-gothic text-sm text-gray-600'>{item.name}</div>
-                <div className='font-gothic text-sm text-gray-600'>{item.place}</div>
+                <div className='hidden font-gothic text-sm text-gray-600 md:block'>
+                  {item.place}
+                </div>
               </div>
             </SwiperSlide>
           ))}

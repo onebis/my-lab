@@ -67,11 +67,11 @@ export default function News() {
       >
         <div className='mx-auto max-w-5xl'>
           <p className='pb-10 text-center font-playfair text-4xl'>News</p>
-          <div className='flex justify-between'>
+          <div className='flex flex-col items-center md:flex-row md:justify-between'>
             {contents.map((content) => {
               return (
                 <Card key={content.id} className='border-none bg-transparent shadow-none'>
-                  <CardHeader className='flex-col items-start px-4 pb-0 pt-2 '>
+                  <CardHeader className='flex-col items-start px-3 pb-0 pt-2 '>
                     <Image
                       alt='Card background'
                       className='object-cover'
@@ -83,7 +83,7 @@ export default function News() {
                     {content.isNew ? (
                       <div className='inline bg-red-400 px-2 py-1 text-white'>New</div>
                     ) : null}
-                    <p className='ml-1 p-1 font-playfair'>{content.date}</p>
+                    <p className='p-1 font-playfair'>{content.date}</p>
                   </CardBody>
                   <CardFooter className={Zen_Kaku_Gothic.className + ` pt-0`}>
                     <p className='font-gothic text-sm font-semibold'>{content.text}</p>

@@ -7,8 +7,8 @@ import line from '@/public/icon/line.svg'
 export default function SNS() {
   return (
     <div className='fixed right-3 top-1/3 z-10 h-1/2'>
-      <ul className='flex flex-col items-center gap-4'>
-        <li className=''>
+      <ul className='flex w-6 flex-col items-center gap-1 md:w-full md:gap-4'>
+        <li>
           <a href='#'>
             <Image src={follow_us} alt={'follow_us'} width={30} />
           </a>
