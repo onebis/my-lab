@@ -1,4 +1,5 @@
 import { Button } from '@nextui-org/button'
+import Image from 'next/image'
 
 export default function MainContent() {
   return (
@@ -10,7 +11,7 @@ export default function MainContent() {
           <p>泡が、あなたをつつむ。</p>
           <p>それが、あたらしいせっけんです。</p>
         </div>
-        <div className='mt-8 min-h-44 bg-gray-300/80 text-center'>Logo</div>
+        <Image src={'/images/Logo.png'} alt={'logo image'} width={330} height={176} />
         <Button radius={'sm'} className='my-3 bg-amber-100/50 px-5 py-8 font-gothic'>
           もっと知りたい
         </Button>
